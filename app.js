@@ -12,6 +12,12 @@ mongoose
 
 app.get('/', ( req, res) => res.send("hello wold"));
 
+app.post('/',( req,res) => {
+    console.log(
+        req.body.email, 
+        req.body.password
+    )
+})
 
 
 const port = process.env.PORT || 5000;
